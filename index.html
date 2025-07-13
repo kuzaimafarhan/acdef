@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cooling & Heating Experts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0;}
+    body { font-family: 'Roboto', sans-serif; background: #232121; color: #333; scroll-behavior: smooth }
+    nav { background: #2e7d32; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('/mnt/data/cb24e304-d442-4f8e-a93a-0ab63e464322.jpg') center/cover no-repeat;
+      color: #fff; padding: 150px 20px; text-align: center;
+    }
+    header h1 { font-size: 3.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.3rem; margin-bottom: 25px; }
+    .btn { background: #2e7d32; color: #fff; padding: 12px 30px; border-radius: 30px;
+           font-weight: bold; text-decoration: none; display: inline-block;
+           transition: background 0.3s; }
+    .btn:hover { background: #256429; }
+
+    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+    .section-title { font-size: 2.5rem; color: #2e7d32; text-align: center; margin-bottom: 40px; }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 30px; }
+    .card { background: #fff; padding: 25px; border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,.1); text-align: center;
+            transition: transform .3s; }
+    .card:hover { transform: translateY(-10px); }
+    .card i { font-size: 2.5rem; color: #2e7d32; margin-bottom: 15px; }
+
+    .gallery-images { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
+    .gallery-images img { max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 48%; }
+
+    .features-list { max-width: 900px; margin: auto; list-style: none; padding-left: 0; }
+    .features-list li { padding: 10px 0; font-size: 1.1rem; }
+    .features-list li::before { content: '\2714'; color: #2e7d32; font-weight: bold; margin-right: 10px; }
+
+    .team { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px; }
+    .team-member { background: white; padding: 20px; border-radius: 12px; text-align: center; width: 260px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .team-member img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; margin-bottom: 15px; }
+
+    .testimonial { background: white; border-left: 5px solid #2e7d32; padding: 20px; margin: 20px auto; max-width: 800px; border-radius: 8px; font-style: italic; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    .testimonial strong { display: block; margin-top: 10px; text-align: right; font-style: normal; color: #2e7d32; }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 30px auto 0;
+    }
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      background: #2e7d32;
+      color: #fff;
+      padding: 12px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #256429;
+    }
+
+    footer { background: #2e7d32; color: #fff; text-align: center; padding: 30px 20px; }
+  </style>
+</head>
+<body>
+ 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Comfort Starts Here</h1>
+    <p>Certified Heating & Cooling Repairs, Maintenance, and Installations</p>
+    <a href="#contact" class="btn">Book an Appointment</a>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto;">At Cooling & Heating Experts, we believe comfort shouldn’t be a luxury—it should be a standard. With years of hands-on experience in air conditioning and heating services, we specialize in installing, repairing, and maintaining systems that keep homes and businesses at the perfect temperature year-round. Our certified technicians combine expert knowledge with friendly service, ensuring every job is done right the first time. Whether you're upgrading your system, solving an urgent problem, or planning for the seasons ahead, we’re here to help—fast, fair, and always reliable.</p>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-temperature-high"></i>
+        <h3>Heating Systems</h3>
+        <p>Installations, tune-ups & repairs for all heating units.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-wind"></i>
+        <h3>Air Conditioning</h3>
+        <p>Reliable A/C servicing to keep your summers cool.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-tools"></i>
+        <h3>Preventive Maintenance</h3>
+        <p>Regular checkups for long-lasting performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Why Choose Us</h2>
+    <ul class="features-list">
+      <li>24/7 Emergency Service</li>
+      <li>Licensed & Certified Technicians</li>
+      <li>Affordable Pricing & Transparent Quotes</li>
+      <li>Years of Hands-on Experience</li>
+      <li>Friendly, Local Service You Can Trust</li>
+    </ul>
+  </section>
+
+  <section id="team">
+    <h2 class="section-title">Meet Our Team</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="jhon.jpg" alt="John Doe">
+        <h3>John Doe</h3>
+        <p>Senior Technician</p>
+      </div>
+      <div class="team-member">
+        <img src="smith.webp" alt="Jane Smith">
+        <h3>Jane Smith</h3>
+        <p>Operations Manager</p>
+      </div>
+      <div class="team-member">
+        <img src="lee.avif" alt="Alex Lee">
+        <h3>Alex Lee</h3>
+        <p>Customer Service Lead</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonial">
+      "These folks are lifesavers during summer! Fast, professional, and friendly. I won’t call anyone else."
+      <strong>- Sarah K.</strong>
+    </div>
+    <div class="testimonial">
+      "They fixed my heater the same day I called. Excellent service and very affordable."
+      <strong>- Mike R.</strong>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2 class="section-title">Our Work in Action</h2>
+    <div class="gallery-images">
+      <img src="pexels-airamdphoto-16592625.jpg" alt="Window Air Conditioner">
+      <img src="pexels-heyho-7534181.jpg" alt="Office Duct & Cooling Installation">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Cooling & Heating Experts | All rights reserved.
+  </footer>
+
+</body>
+</html>
